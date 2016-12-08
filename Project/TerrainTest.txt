@@ -1,0 +1,4 @@
+x,s,s,n,d,w,x
+x,g,x
+x,c,x
+x,d,d,d,d,d,d,d,g,x
