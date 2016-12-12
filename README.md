@@ -12,10 +12,9 @@ This program is run in python and uses several aspects from the pygame library a
   * n = snow and 
   * x = empty space used to either end the line or indent the map properly.
   * w = wall and makes up a list of pixels the character cannot go over thus is a boundary.
- 2. After the program opens, reads, and then splits the file up it converts every letter into a 16 by 16 pixel terrain image and creates the map based off those pixels.
- 3. It then goes through the player, wall and monster classes to ensure if the player collides witha  wall it cannot go through it and if the player pixel comes into contact with the monster pixels it stops at them and every moment of contact does damage to the player and monster. Once the monsters health drops to 0 it disappears.
- 4. However if the player dies the window automatically closes and then Prints out a string of test informing the player they died and to try again.
- 5. The last part of this code executes the commands needed to display the pixels, character, monsters, walls and key commands for what to do when a key is pressed in a while loop.
+2. After the program opens, reads, and then splits the file up it converts every letter into a 16 by 16 pixel terrain image and creates the map based off those pixels.It uses a basis of ```pygame.rect``` and ```pygame.sprite.group``` to give the pixels for and locations values depending on their classes.
+3. It then goes through the player, wall and monster classes to ensure if the player collides witha  wall it cannot go through it and if the player pixel comes into contact with the monster pixels it stops at them and every moment of contact does damage to the player and monster. Once the monsters health drops to 0 it disappears.The Player class takes care of the plays health and collision forces using the attack and move classes in it. The only aspects in the monster class that deals with the attack sequence is the monsters health and damage.
+4. The last part of this code executes the commands needed to display the pixels, character, monsters, walls and key commands for what to do when a key is pressed in a while loop. 
  
  ## Purpose
  The reason this code was created was both as a project and for fun. Creating things is always such an exhilerating experience and using this format creating simeple game maps is quite easy now if you know some pyhton basics. If not hey there's always google.
